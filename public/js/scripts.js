@@ -158,6 +158,7 @@ function getGridPosition(number) {
     { row: 7, column: 16 },  // Radium
     { row: 7, column: 17 },  // Radium
     { row: 7, column: 18 },  // Radium
+
   ];
   return positions[number - 1]; 
 }
