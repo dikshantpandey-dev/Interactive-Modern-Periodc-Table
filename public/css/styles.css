@@ -189,3 +189,17 @@ html, body {
     }
   }
   
+
+  /*
+
+  git add  . --> will stage you all modified and newly created files 
+
+  git commit ----> it will take a snap shot of a current version of your code 
+
+  git push ---> it will push you local code to remote / cloud / github 
+
+  git push -u origin  main --> -u creates a upstream of your branch 
+
+  
+
+  */
