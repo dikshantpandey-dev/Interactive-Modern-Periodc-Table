@@ -1,0 +1,191 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+  }
+  
+  #periodic-table-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-gap: 2px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 1115px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 4;
+  }
+  
+  .element {
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease;
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000; 
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    z-index: -1;
+  }
+
+
+  .element:hover .hover_element{
+    display: flex;
+  }
+
+
+
+
+
+
+  .hover_element {
+    width: 86px;
+    height: 86px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid black;
+
+    margin: auto;
+    background: black;
+    display:none;
+    
+    border-radius: 10px;
+    cursor: pointer;
+    /* color: white; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+  }
+  .hover_element p{
+    margin: 0;
+    font-size: 12px;
+    /* background-color: red; */
+  }
+  
+
+  .element .number {
+    font-size: 0.65em;
+    font-weight: bold;
+  }
+  
+  .element .symbol {
+    font-size: 1.25em;
+    font-weight: bold;
+  }
+  
+  .element .name {
+    font-size: 0.55em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    text-align: center;
+}
+
+.element:hover {
+    /* transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    width: 70px;
+    height: 70px; */
+}
+
+.element:hover .name {
+    font-size: 0.65em;
+}
+  
+  #element-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #modal-body {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: 20px;
+    padding: 20px;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  #close-modal {
+    cursor: pointer;
+    font-size: 30px;
+    color: #000;
+  }
+
+  @media (max-width: 768px) {
+    #periodic-table-container {
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    }
+
+    .element {
+      font-size: 0.9em;
+  }
+    
+    #modal-body {
+      padding: 10px;
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #periodic-table-container {
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    }
+  
+    .element {
+      padding: 5px;
+      font-size: 0.8em;
+    }
+  }
+  

@@ -128,11 +128,9 @@ Interactive Periodic Table
 │     ├─ element_116_livermorium.glb
 │     ├─ element_117_tennessine.glb
 │     └─ element_118_oganesson.glb
-├─ README.md
 └─ src
    ├─ data
    │  └─ elements.json
    └─ server.js
 
-```# Interactive-Modern-Periodc-Table
-# Interactive-Modern-Periodc-Table
+```
