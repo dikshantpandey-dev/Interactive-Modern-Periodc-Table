@@ -8,8 +8,6 @@ This project is an interactive modern periodic table built with Node.js. It allo
 
 - Interactive table layout
 - Detailed information about each element
-- Search functionality
-- Responsive design for various devices
 - User-friendly interface
 
 ## Installation
