@@ -60,10 +60,6 @@ If you want to contribute or make modifications to the project, follow these ste
 
 You can view the commit history for this project [here](https://github.com/dikshantpandey-dev/Interactive-Modern-Periodc-Table/commits/main/).
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 If you have any questions or suggestions, feel free to open an issue or contact me directly.
